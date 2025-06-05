@@ -2,7 +2,6 @@ package Strategy;
 
 import Model.User;
 import db.AddressBook;
-
 import java.util.Map;
 
 public class ViewOperation implements Operation {

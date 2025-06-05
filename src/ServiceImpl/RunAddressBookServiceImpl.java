@@ -1,7 +1,12 @@
 package ServiceImpl;
 
 import Service.RunAddressBookService;
-import Strategy.*;
+import Strategy.Operation;
+import Strategy.AddOperation;
+import Strategy.ViewOperation;
+import Strategy.SearchOperation;
+import Strategy.DeleteOperation;
+import Strategy.RenameOperation;
 import db.AddressBook;
 import java.util.HashMap;
 import java.util.Map;
