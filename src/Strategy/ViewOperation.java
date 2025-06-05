@@ -15,7 +15,7 @@ public class ViewOperation implements Operation {
     @Override
     public void execute() {
         for (Map.Entry<String, User> contact : addressBook.getContacts().entrySet()) {
-            System.out.println(contact.toString());
+            System.out.println(contact.getValue().toString());
         }
     }
 }
