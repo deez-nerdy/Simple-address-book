@@ -1,11 +1,11 @@
 package Main.ServiceImpl;
 
 import Main.Model.User;
-import Main.Service.DataImportToBook;
+import Main.Service.DataImport;
 import Main.db.AddressBook;
 import java.util.Map;
 
-public class DataImportToBookImpl implements DataImportToBook {
+public class DataImportImpl implements DataImport {
     @Override
     public void importData(Map<String, User> data) {
         AddressBook.contacts.putAll(data);
