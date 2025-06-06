@@ -1,13 +1,13 @@
 package Main.Strategy;
 
 import Main.Service.FileWriter;
-import Main.Service.ReportGenerator;
+import Main.Service.ListGenerator;
 import Main.ServiceImpl.FIleWriterImpl;
-import Main.ServiceImpl.ReportGeneratorImpl;
+import Main.ServiceImpl.ListGeneratorImpl;
 import java.util.Scanner;
 
 public class SaveToFileOperation implements Operation {
-    private ReportGenerator reportGenerator = new ReportGeneratorImpl();
+    private ListGenerator reportGenerator = new ListGeneratorImpl();
     private FileWriter fileWriter = new FIleWriterImpl();
     Scanner scanner;
 
@@ -25,7 +25,7 @@ public class SaveToFileOperation implements Operation {
             scanner.next();
         }
 
-        fileWriter.write(reportGenerator.getReport(), filePathCreator(fileName));
+        fileWriter.write(reportGenerator.getList(), filePathCreator(fileName));
     }
 
     private String filePathCreator(String fileName) {

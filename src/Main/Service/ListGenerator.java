@@ -1,5 +1,5 @@
 package Main.Service;
 
-public interface ReportGenerator {
-    String getReport();
+public interface ListGenerator {
+    String getList();
 }

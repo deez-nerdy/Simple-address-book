@@ -1,17 +1,17 @@
 package Main.Strategy;
 
 import Main.Service.DataConverter;
-import Main.Service.DataImportToBook;
+import Main.Service.DataImport;
 import Main.Service.FileReader;
 import Main.ServiceImpl.DataConverterImpl;
-import Main.ServiceImpl.DataImportToBookImpl;
+import Main.ServiceImpl.DataImportImpl;
 import Main.ServiceImpl.FileReaderImpl;
 import Main.db.AddressBook;
 import java.io.File;
 import java.util.Scanner;
 
 public class ImportOperation implements Operation {
-    DataImportToBook dataImportToBook = new DataImportToBookImpl();
+    DataImport dataImportToBook = new DataImportImpl();
     private FileReader fileReader = new FileReaderImpl();
     private DataConverter dataConverter = new DataConverterImpl();
     private Scanner scanner;

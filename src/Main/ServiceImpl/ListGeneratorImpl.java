@@ -1,16 +1,16 @@
 package Main.ServiceImpl;
 
 import Main.Model.User;
-import Main.Service.ReportGenerator;
+import Main.Service.ListGenerator;
 import Main.db.AddressBook;
 import java.util.Map;
 
-public class ReportGeneratorImpl implements ReportGenerator {
+public class ListGeneratorImpl implements ListGenerator {
     private static final String REPORT_HEADER = "Name, Second name, Address, Phone number";
     private static final String REPORT_SEPARATION_COMA = ",";
 
     @Override
-    public String getReport() {
+    public String getList() {
         StringBuilder reportBuilder = new StringBuilder();
         reportBuilder.append(REPORT_HEADER)
                 .append(System.lineSeparator());
